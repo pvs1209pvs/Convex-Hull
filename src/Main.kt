@@ -1,11 +1,12 @@
 fun main() {
 
-    val p = Plane(5,5)
-
+    val p = Plane(4,4)
     p.addRandomPoints((p.r*p.c)/2)
-
     println(p)
 
-    println(findStartingPoint(p))
+    println("lowest point ${findStartingPoint(p)} \n")
+
+    grahamScan(p)
+
 
 }
